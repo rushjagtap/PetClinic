@@ -31,6 +31,11 @@ public class PetController {
 	}
 	
 	
+	@RequestMapping(value = "/home" ,method = RequestMethod.GET)
+	public String welcome()
+	{
+		return "Welcome to Pet Clinic Application";
+	}
 	
 	@RequestMapping(value = "/pets" ,method = RequestMethod.GET)
 	public List<Pet> getAllPet()
